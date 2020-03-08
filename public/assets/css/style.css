@@ -1,7 +1,12 @@
 li {
+  display: flex;
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  width: 40%;
+  justify-content: center;
+  line-height: 2em;
+  font-size: 1.2em;
 }
 
 .label {
@@ -16,4 +21,12 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-cat {
+  margin-left: 1em;
 }
