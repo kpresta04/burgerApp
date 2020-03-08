@@ -52,6 +52,9 @@ h2 {
 .container div {
   width: 100%;
 }
+/* .container button {
+  align-self: center;
+} */
 #not-devoured {
   display: grid;
   grid-column: 1;

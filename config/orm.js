@@ -51,15 +51,15 @@ var orm = {
     });
   },
   insertOne: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO " + table;
+    // var queryString = "INSERT INTO " + table;
 
-    queryString += " (";
-    queryString += cols.toString();
-    queryString += ") ";
-    queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
-    queryString += ") ";
-
+    // queryString += " (";
+    // queryString += cols.toString();
+    // queryString += ") ";
+    // queryString += "VALUES (";
+    // queryString += vals.toString();
+    // queryString += ") ";
+    const queryString = `INSERT INTO ${table} (${cols}) VALUES ("${vals}")`;
     console.log(queryString);
 
     connection.query(queryString, vals, function(err, result) {

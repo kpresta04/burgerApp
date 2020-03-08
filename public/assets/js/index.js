@@ -26,14 +26,11 @@ $(function() {
     var newCat = {
       name: $("#ca")
         .val()
-        .trim(),
-      sleepy: $("[name=sleepy]:checked")
-        .val()
         .trim()
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/burgers", {
       type: "POST",
       data: newCat
     }).then(function() {
