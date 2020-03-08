@@ -1,7 +1,12 @@
 <li>
 	{{name}}
-
-
-
+	{{#unless devoured}}
 	<button class="delete-cat" data-id="{{this.id}}">DEVOUR IT!</button>
+
+	{{/unless}}
+
+	{{#if devoured}}
+	<button class="delete-cat" data-id="{{this.id}}" disabled="true">DEVOUR IT!</button>
+	{{/if}}
+
 </li>
