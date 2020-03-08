@@ -1,24 +1,30 @@
 <h1>Eat-Da-Burger</h1>
+<div class="container">
 
-<h2>Cats that are not sleepy!</h2>
+  <div id="not-devoured">
 
-<ul>
-  {{#each cats}}
-  {{#unless devoured}}
-  {{> cats/cat-block sleep=true}}
-  {{/unless}}
-  {{/each}}
-</ul>
+    <h2>Cats that are not sleepy!</h2>
 
-<h2>Cats that are sleepy!</h2>
+    <ul>
+      {{#each cats}}
+      {{#unless devoured}}
+      {{> cats/cat-block sleep=true}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div id="devoured">
+    <h2>Cats that are sleepy!</h2>
 
-<ul>
-  {{#each cats}}
-  {{#if devoured}}
-  {{> cats/cat-block sleep=false}}
-  {{/if}}
-  {{/each}}
-</ul>
+    <ul>
+      {{#each cats}}
+      {{#if devoured}}
+      {{> cats/cat-block sleep=false}}
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
 <h2>Add a Cat</h2>
 <form class="create-form">

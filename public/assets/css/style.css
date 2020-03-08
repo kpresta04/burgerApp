@@ -3,7 +3,7 @@ li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
-  width: 40%;
+  /* width: 40%; */
   justify-content: center;
   line-height: 2em;
   font-size: 1.2em;
@@ -26,7 +26,18 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#not-devoured {
+  display: grid;
+  grid-column: 1;
+}
+#devoured {
+  display: grid;
+  grid-column: 2;
+}
 .delete-cat {
   margin-left: 1em;
 }
