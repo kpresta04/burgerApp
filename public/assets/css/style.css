@@ -1,3 +1,18 @@
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+}
+body {
+  overflow-y: scroll;
+}
+
+ul {
+  padding-left: 0;
+}
+
 li {
   display: flex;
   padding: 5px;
@@ -32,7 +47,10 @@ h2 {
 .container {
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
+}
+.container div {
+  width: 100%;
 }
 #not-devoured {
   display: grid;
@@ -46,6 +64,18 @@ h2 {
 .delete-cat {
   margin-left: 1em;
 }
-#addBurger h2 {
+/* #addBurger h2 {
   display: flex;
+  margin: 0 auto;
+} */
+/* #addBurger form {
+  display: block;
+  margin: 0 auto;
+} */
+#addBurger {
+  margin: 0 auto;
+}
+.create-form {
+  display: grid;
+  justify-content: center;
 }
