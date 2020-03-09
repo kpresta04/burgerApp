@@ -4,11 +4,14 @@ html {
   height: 100vh;
   position: fixed;
   margin: 0;
-}
-body {
   overflow-y: scroll;
 }
-
+#burgerImg {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 8em;
+}
 ul {
   padding-left: 0;
 }
